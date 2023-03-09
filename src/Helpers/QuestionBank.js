@@ -5,7 +5,7 @@ export const Questions = [
         optionB: "4",
         optionC: "2",
         optionD: "5",
-        answer: "optionC"
+        answer: "B"
     },
     {
         prompt: "Which is a streaming platform?",
@@ -13,7 +13,7 @@ export const Questions = [
         optionB: "Facebook",
         optionC: "CouchTuner",
         optionD: "Instagram",
-        answer: "optionC"
+        answer: "C"
     },
     {
         prompt: "Who is the current US president?",
@@ -21,7 +21,7 @@ export const Questions = [
         optionB: "Donald Trump",
         optionC: "George Bush",
         optionD: "Joe Biden",
-        answer: "optionD"
+        answer: "D"
     },
     {
         prompt: "What is the world's most spoken language?",
@@ -29,7 +29,7 @@ export const Questions = [
         optionB: "English",
         optionC: "Chinese",
         optionD: "French",
-        answer: "optionB"
+        answer: "B"
     },
     {
         prompt: "What team does Cristiano Ronaldo play for?",
@@ -37,6 +37,6 @@ export const Questions = [
         optionB: "Real Madrid",
         optionC: "Bayern Munich",
         optionD: "Arsenal",
-        answer: "optionA"
+        answer: "A"
     }
 ]
