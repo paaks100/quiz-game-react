@@ -9,12 +9,16 @@ export const Quiz = () => {
     const [optionChosen, setOptionChosen] = useState("");
 
     const nextQuestion = () => {
+        //increase score by 1 if option chosen = answer
         (Questions[currQuestion].answer == optionChosen) && setScore(score+1);
+        //go to next question
         setCurrQuestion(currQuestion+1)
     }
 
     const finishQuiz = () => {
+        //increase score by 1 if option chosen = answer
         (Questions[currQuestion].answer == optionChosen) && setScore(score+1);
+        //go to endScreen
         setGameState("endScreen")
     }
 
@@ -28,6 +32,8 @@ export const Quiz = () => {
                 <button onClick={() => setOptionChosen("D")}> {Questions[currQuestion].optionD} </button>
             </div>
 
+            {/* if you're on the last question, finish quiz button
+            otherwise Next >>> button */}
             {currQuestion == Questions.length-1
                 ? <button onClick={finishQuiz}> Finish Quiz</button>
                 : <button onClick={nextQuestion}> Next {">>>"}</button>
